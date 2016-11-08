@@ -1,0 +1,690 @@
+
+@import url(http://weloveiconfonts.com/api/?family=iconicfill|maki);
+
+/* iconicfill */
+[class*="iconicfill-"]:before {
+  display: inline-block;
+  font-family: 'IconicFill', sans-serif;
+  width: 15px;
+}
+
+/* maki */
+[class*="maki-"]:before {
+
+  font-family: 'maki', sans-serif;
+  display: inline-block;
+  width: 15px;
+}
+
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*
+
+logo kleuren:;
+#fff  wit   rgba(255, 255, 255, .5)     ffffff
+#aacffb lichtblauw
+#4794df  middelblauw    rgba(71, 148, 223, .25)     4794df
+#21548e  donkerblauw    rgba(33, 84, 142, .25)      21548e
+
+lucht kleurverloop:
+bovenin: #a2c2eb;
+onderin: #d7e4f5;
+
+ */
+
+body, html {
+  margin: 0;
+  padding: 0 7px;
+  width: 100%;
+  height: 100%;
+ /* overflow-x: hidden; */
+
+}
+
+body {
+
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  font-family: 'Roboto', sans-serif;  */
+  font-size: 16px;
+  line-height: 1.2em;
+ /* background-color: rgba(71, 148, 223, .25); */
+  color: #424242;
+}
+
+  main, .inhoud {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .nav {
+      max-width: 710px;
+      margin-left: 50px;
+    }
+
+h1, h2, h3 {
+  font-family: 'Varela Round', sans-serif;
+  line-height: 1.2em;
+}
+
+h2 {
+
+}
+
+h1 {
+  text-align: center;
+}
+
+
+
+.groep1 h3, .groep2 h3, .transfer h3 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+}
+
+.groep4 h3, .groep6 h3 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-variant: uppercase;
+}
+
+.transfer span {
+  color: #4794df;
+
+}
+
+
+.reis__hoofdkop h4:before, .reis__hoofdkop h4:after{
+  content: "⁓ "; /*&#8275";   Swung Dash U+2053   http://unicode-table.com/en/2053/ */
+  font-weight: 300;
+  padding: 5px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+ .reis__hoofdkop h4  {
+  text-align: center;
+
+  border-top: dashed;
+  border-bottom: dashed;
+  border-width: 1px;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 10px 0px;
+}
+
+.vlakLinks h4 {
+  text-align: center;
+
+  border-top: dashed;
+  border-bottom: dashed;
+  border-width: 1px;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 10px 0px;
+}
+/*
+header, nav, footer, div {
+  box-sizing: border-box;
+}
+*/
+
+p {
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.groep1 p:before, .groep2 p:before {
+  content: "❄ ❄ ";
+  text-align: center;
+  color: #4794df;
+  font-size: 20px;
+}
+
+.condensed {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+img, embed, object, video {
+	max-width: 100%;
+}
+
+button  {
+	min-width: 48px;
+	min-height: 40x;
+	border-radius: 15px;
+	background-color: #4794df;
+	padding: 1.5em;
+  font-weight: 700;
+  color: #fff;
+}
+
+/*
+table {
+  width: 100%;
+
+}  */
+
+td, th {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
+  text-align: left;
+  vertical-align: top;
+  padding-right: 10px;
+}
+ /*td:first-of-type {
+  padding-left: 20px;
+ }
+*/
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+ /* padding-left: 1em; */
+  text-indent: -.9em;  /*  -.7em;  */
+}
+
+li:before {
+  padding-right: 0px;
+  color: #4794df; /* or whatever color you prefer */
+}
+
+
+
+.MB{
+  /*  content: "• ";  */
+  color: #4794df;
+}
+
+.DB{
+  /*  content: "• ";  */
+  color: #21548e;
+}
+
+
+footer  {
+	font-size: 12px;
+}
+
+.reis__kop, .reis1, .reis2, .voorWie, .ervaringen {
+	padding: 0 5px 0 0px;
+}
+
+h2.reis__kop {
+  color: #4794df;
+  padding-left: 0px;
+  margin-top: 0px;
+}
+
+.tintvlak {
+  background-color: #edf3fc;
+}
+
+.tintvlakLB  {
+  background-color: rgba(71, 148, 223, .1) ;
+}
+
+.tintvlakMB  {
+  background-color: rgba(71, 148, 223, .25) ;
+}
+.tintvlakDB  {
+  background-color: rgba(33, 84, 142, .25);
+}
+
+.tintvlakWit50  {
+  background-color: rgba(255, 255, 255, .5);
+}
+
+.tintvlakWit25  {
+  background-color: rgba(255, 255, 255, .25);
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.kleiner {
+  font-size: 14px;
+}
+
+.cursief {
+
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+/*
+ *
+ * Header
+ *
+ */
+
+.header {
+  /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26); */
+  min-height: 56px;
+  transition: min-height 0.3s;
+
+}
+
+.header__inner {
+  width: 100%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header__logo {
+  width: 40%;
+  margin-bottom: 1em;
+  vertical-align: top;
+  margin-top: 5%;    /*50px; */
+  padding-left: 10%;
+}
+
+
+/*
+ *
+ * Top Level Navigation
+ *
+ */
+
+.nav {
+ /* width: 90%; */
+  margin-left: 3%;
+
+  background-color: #4794df;
+  border-radius: 10px;
+}
+
+.nav__list {
+  width: 710%;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__list li.vr {
+   /* doesnt work well on smaller screens
+  border-right: 1px solid #fffff0;
+  border-radius: 5px;*/
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.nav__item {
+  box-sizing: border-box;
+  display: inline-block;
+   white-space: nowrap;
+  /* width: 16%;
+ float: left; */
+  position: relative;
+  margin-left: 1px;
+  font-size: 12px;
+ /* font-weight: 700;*/
+  letter-spacing: 0.1em;
+  text-align: center;
+  line-height: 24px;
+  padding: 15px 0px 15px 10px;
+  text-transform: uppercase;
+
+}
+
+
+#active a{
+  color: #fff;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  white-space:
+
+}
+
+
+.nav a {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+
+  text-decoration: none;
+  color: #000;
+  padding: 1.5em;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+/*
+ *
+ * Main
+ *
+ */
+
+main {
+  /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26); */
+  width: 100%;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.vlakLinks {
+  margin-bottom: 15px;
+  padding: 10px;
+  margin-right: 5px;
+ /* box-shadow: -2px 2px 5px 2px #d7e4f5;  /*88a9de  */
+}
+
+.vlakRechts {
+  margin-bottom: 15px;
+  padding: 10px;
+  margin-left: 5px;
+ /* box-shadow: -2px 2px 5px 2px #d7e4f5;  8?*/
+}
+
+.reis__hoofdkop {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.reis__hoofdkop p {
+  max-width: 700px;
+ /* font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2em;  */
+}
+
+
+.reis__hoofdkop img {
+  float: right;
+
+}
+
+
+/*
+onderdelen met beeld
+*/
+   .beeldBoven {
+    width: 70%;
+    max-width: 100%;
+   }
+
+    .beeld img {
+
+     /* width: 100px;  */
+    }
+
+    .verder {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .tekst {
+      width: 45%;
+      order: 0;
+    }
+
+    .beeld {
+      width: 45%;
+      order: 1;
+    }
+
+
+     .tekstenbeeld {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+
+
+
+
+/*
+.voorWie, .ervaringen, .reis1, .reis2 {
+  margin-top: 0px;
+}  */
+
+.voorWie h2 {
+  color: #21548e;
+
+}
+
+.ervaringen h2 {
+  text-indent: 40px;
+  color: #21548e;
+
+}
+
+.verder img{
+   width: 50%;
+   max-width: 100px;
+}
+
+.verder p {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 20px;
+  text-align: left;
+}
+
+.verder a, .reis__tekst a, .skigebied a, .transfer a {
+  /*text-decoration: none; */
+  color: #4794df;
+}
+
+.modalDialog a {
+  color: #ffffff;
+}
+
+.verder a:hover, .reis__tekst a:hover, .skigebied a:hover, .transfer a:hover {
+  color: #21548e;
+}
+
+/* modal */
+
+.modalDialog {
+ position: fixed;
+  font-family: 'Roboto', sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 99999;
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+
+.modalDialog:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modalDialog > div {
+  width: 300px;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  background: #fff;
+  background: -moz-linear-gradient(#fff, #a2c2eb);
+  background: -webkit-linear-gradient(#fff, #a2c2eb);
+  background: -o-linear-gradient(#fff, #a2c2eb);
+}
+
+.close {
+  background: #4794df;
+  color: #FFFFFF;
+  line-height: 25px;
+  position: absolute;
+  right: -12px;
+  text-align: center;
+  top: -10px;
+  width: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  -moz-box-shadow: 1px 1px 3px #000;
+  -webkit-box-shadow: 1px 1px 3px #000;
+  box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { background: #00d9ff; }
+
+.close a {
+  color: #ffffff;
+}
+
+/* eind modal */
+/*
+*
+* Reisbeschrijvingen
+*
+*/
+
+/*
+.groep1, .groep2, .groep4{
+  background-color: rgba(71, 148, 223, .1);
+}
+*/
+
+
+.groepVlak {
+
+  padding: 10px;
+ /* margin-bottom: 15px;  */
+  margin-right: 0px;
+  /*box-shadow: -2px 2px 5px 2px #d7e4f5; */
+}
+
+
+
+.vlak1Tabel {
+  /*background-color: #fff; */
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  box-shadow: -2px 2px 5px 2px #d7e4f5;  /*88a9de  */
+}
+
+/*
+.vlak2Tabel {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 15px;
+  margin-right: 5px;
+  box-shadow: -5px  5px 5px 5px #bed6f7;
+}
+*/
+
+.geenTabel {
+  padding-bottom: 5px;
+}
+
+.lijnOnder {
+
+  border-bottom: 1px solid #95d1f9;
+
+}
+
+ .hele__tabel {
+      width: 100%;
+      padding-bottom: 15px;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+
+    .tabel {
+      margin-bottom: 10px;
+    }
+
+.tabel td  {
+  padding-right: 10px;
+}
+
+.tabel td.nowrap {
+  white-space: nowrap;
+  padding-right: 10px;
+}
+
+td:last-of-type {
+  padding-right: 0px;
+}
+
+
+
+.details ul {
+  list-style-type: none;
+
+  padding: 0px;
+  margin: 0px;
+}
+
+.details li {
+
+  list-style-position: inside;
+  white-space: wrap;
+
+}
+
+.opsomming img{
+  padding-top: 2px;
+}
+
+/*
+ *
+ * Footer
+ *
+ */
+
+footer {
+  border-top: 1px solid #E0E0E0;
+  padding: 1em;
+  width: 100%;
+  margin-top: 40px;
+  background-color: #4794df;
+  color: #fff;
+}
+
+footer li {
+  display: inline-block;
+  margin: 0 1em;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+  padding: 1.5em;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

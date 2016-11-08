@@ -1,0 +1,1734 @@
+html {
+  max-width: 1200px;
+  margin: auto;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+  background: transparent;
+  color: #2476bf;
+}
+h1, h2, h3, h4, p {
+  font-family: 'Raleway', sans-serif;
+  color: #2476bf;
+}  
+h1 {
+  color: #2476bf;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  display: inline-block;  /* zorgt dat lijn onder tekst net zo breed is als de tekst zelf */
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 0;
+}
+/*  lijn onder tekst  */
+h1:after {
+	content: '';
+    position: absolute;
+    display: block;
+    height: 0.3rem;
+    width: 100%;
+    background: rgba(59, 184, 22, 0.0);  /* #3bb816  */
+    margin-top: 0.6rem;
+	
+	/*
+    content: '';
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    border-bottom: 0.2rem solid rgba(255, 255, 255, 0.0);
+    margin-top: 3rem;
+    z-index: -1;  */
+}
+h2 {
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  color: #2476bf;
+  font-weight: 400;
+  display: inline-block;
+  position: relative;
+}
+/*  lijn onder tekst  */
+h2:after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 0.3rem; 
+    width: 100%;
+    background: rgba(59, 184, 22, 1.0);  /* #3bb816  */
+	  margin-top: 0.3rem;
+}
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+    letter-spacing: 0rem;
+  //text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+}
+/*  lijn onder tekst  */
+h3:after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 0.5rem; /*  21px   2rem */
+    width: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    margin-top: -0.2rem;
+}
+h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 2rem;
+}
+/*  lijn onder tekst  */
+h4:after {
+    content: '';
+    position: absolute;
+  //  left: 0;
+    display: block;
+    width: 100%;
+    height: 32px;
+    background: rgba(59, 184, 22, 0.5);  /* #3bb816  */
+    margin-top: -7px;
+    z-index: -1;
+}
+p, ul {
+    font-size: 0.9rem;
+    letter-spacing: 0.03rem;
+	color: #2476bf;
+	font-weight: 500;
+}
+p a {
+	font-weight: 700;
+	color: #2476bf;
+}
+p a:hover {
+	font-weight: 700;
+	color: #3bb816;
+}
+.noWrap {
+  white-space: nowrap;
+}
+strong, .bold  {
+  font-weight: 700;
+}
+.indent {
+  text-indent: 2rem;
+  display: inline-block;
+}
+.italic {
+  font-style: italic;
+}
+
+/* woorden in onderkast in h2.taglineSubregel */
+.lowerCase {
+  font-weight: 500;
+  text-transform: none;
+  font-size: 135%;
+}
+.row.transparentWhite {
+  background-color: rgba(255, 255, 255, 0.6);
+ //  background-color: rgba(59, 184, 22, 0.5); /* groen */
+  padding: 0rem 0 2rem 0;
+}
+.transparentWhite {
+	//background-color: rgba(59, 184, 22, 0.6); /* groen */
+    background-color: rgba(255, 255, 255, 0.7);
+}
+/* Gecentreerde grotere tekst met transparant vlak en border */
+.text {
+    text-align: center;
+      margin-bottom: 1rem;
+      padding: 2rem 0;
+}
+.text p {
+	font-size: 1.2rem;
+    font-weight: 700;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.7);
+    border: 0.2rem solid rgba(255, 255, 255, 1.0);
+    padding: 0.3rem 0.6rem 0.6rem 0.6rem;
+}
+[type='text'], [type='password'], [type='date'], 
+[type='datetime'], [type='datetime-local'], [type='month'], 
+[type='week'], [type='email'], [type='number'], 
+[type='search'], [type='tel'], [type='time'], 
+[type='url'], [type='color'], textarea {
+	font-size: 0.8rem;
+}
+input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #2476bf;
+  opacity: 0.4;
+}
+input::-moz-placeholder { /* Firefox 19+ */
+  color: #2476bf;
+  opacity: 0.4;
+}
+input:-ms-input-placeholder { /* IE 10+ */
+  color: #2476bf;
+  opacity: 0.4;
+}
+input:-moz-placeholder { /* Firefox 18- */
+  color: #2476bf;
+  opacity: 0.4;
+}
+textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #2476bf;
+  opacity: 0.4;
+}
+textarea::-moz-placeholder { /* Firefox 19+ */
+  color: #2476bf;
+  opacity: 0.4;
+}
+textarea:-ms-input-placeholder { /* IE 10+ */
+  color: #2476bf;
+  opacity: 0.4;
+}
+textarea:-moz-placeholder { /* Firefox 18- */
+  color: #2476bf;
+  opacity: 0.4;
+}
+
+
+/* NAVIGATIE BOVENIN*/
+.small-12.sticky {
+  margin-top: 0;
+}
+.top-bar {
+  padding: 0rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+ margin-top: -1rem;
+}
+.top-bar ul, .title-area ul {
+	font-size: 0.7rem;
+  list-style-type: none;
+//  display: inline;  /* uitcommentarieren zorgt dat het dropdown menu inklapt */
+  background-color: inherit;
+}
+.top-bar li, .title-area li, .top-bar-right img {
+  display: inline;
+}
+.top-bar-left li.logo {
+    margin-top: 0rem;
+}
+.menu li {
+    padding:0.7rem 0rem 0.7rem 0;
+    margin: 0.5rem 0rem 0.5rem 1rem;
+}
+.menu li a {
+    padding: 0rem 1rem 0rem 0;
+    display: inline-block;
+	color: #2476bf;
+}
+.menu li a:hover {
+    color: #3bb816; /*  oranje */
+}
+.menu .active > a{
+    color: #3bb816; /*  oranje */
+	background: none;
+}
+  
+.menu.medium-horizontal > li {
+    display: inline-block;
+	font-weight: 800;
+    font-size: 0.8rem;
+}
+
+.sticky.is-stuck {
+    position: fixed;
+    z-index: 300;
+}
+.top-bar input {
+  display: inline-block;
+  height: 2rem;
+  margin: 0;
+}
+.top-bar-right {
+	//margin-right: 1rem;
+}
+.top-bar-right .menu li {
+	 margin: 0.5rem 1rem 0.5rem 0rem;
+  padding: 0;
+}
+
+i {
+  font-size: 20px;
+  padding: 0.1rem 0.8rem;
+}
+.blauw.button, a.blauw.button.offer {
+  background-color: #2476bf; /* blauw  */
+  border: 0.3rem solid #2476bf;
+}
+.blauw.button:hover, a.blauw.button.offer:hover {
+  background-color: #3bb816; /* groen */
+  border: 0.3rem solid #3bb816;
+}
+
+.title-area {
+  list-style-type: none;
+}
+.button, .top-bar-right a.button {
+  padding: 0.5rem 0.7rem;
+  margin: 0;
+  font-size: 0.7rem;
+  font-weight: 700;
+   letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: rgba(59, 184, 22, 0.8); /* groen */
+  border: 0.3rem solid #3bb816;
+}
+.button, .top-bar-right a.button:hover {
+  background-color: #2476bf;
+  border: 0.3rem solid #2476bf;
+}
+.button:hover {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);  /* schaduw-1  */
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);  /* schaduw-2  */
+}
+.top-bar-right a.button:hover {
+	color: #FFFFFF;
+}
+
+.lichter {
+  background-color: rgba(59, 184, 22, 0.7); /* #3bb816;  */
+}
+.title-bar {
+  background: #2476bf; 
+  margin-top: -1rem;
+}
+.title-bar .menu-icon {   
+    margin-top: 0.25rem;
+}
+.dropdown-pane {
+	padding-right: 2rem;
+  font-size: 0.8rem;
+  text-transform: none;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+ //  box-shadow: 0.3rem 0.3rem 0 rgba(0,0,0,0.23);
+}
+.dropdown-pane.columns {
+      padding-left: 0;
+}
+.dropdown-pane input {
+  margin: 0.5rem 0;
+  height: 2rem;
+}
+.dropdown-pane p {
+	font-size: 0.8rem;
+}
+
+
+/* is komen te vervallen  
+
+ul.submenu {
+  background-color: #ffffff;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  // box-shadow: 0.3rem 0.3rem 0 rgba(0,0,0,0.23);
+}
+.dropdown.menu.medium-horizontal 
+> li.is-dropdown-submenu-parent 
+> a::after {
+	color: #2476bf;
+}
+.is-dropdown-submenu {
+    border: 1px solid #eee;
+    background-color: #ffffff;
+//  border-radius: 0 0 5px 5px;
+//  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+//  transition: all 0.2s ease-in-out;
+  padding: 0rem 0.6rem 0.6rem 0.6rem;
+}
+
+.is-accordion-submenu-parent > a::after {
+  border-color: #2476bf transparent transparent;
+  right: -2rem;
+}
+li.is-accordion-submenu-item {
+    padding-left: 0.6rem;
+}
+li.is-accordion-submenu-item:first-child {
+    margin-top: 0.6rem;
+}
+li.is-accordion-submenu-item:last-child {
+    padding-bottom: 0.2rem;
+}
+.is-accordion-submenu-item a {
+  color: #aaaaaa;
+}  */
+
+/*  ALLE PAGINA'S: SECTIES met achtergrondbeelden*/
+.homeAchtergrond,
+.homeSecond,
+.homeThird,
+.dienstenAchtergrond,
+.drukkenAchtergrond,
+.drukkenPapiersoortenAchtergrond,
+.drukkenDrukmethodesAchtergrond,
+.digitaalAchtergrond,
+.offerteAchtergrond,
+.opmaakAchtergrond,
+.opmaakCoverAchtergrond,
+.opmaakBinnenAchtergrond,
+.serviceAchtergrond,
+.universiteitAchtergrond {
+  position: relative;
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.padding {
+	padding: 0rem 0 10rem 0;
+   margin: 1rem 0 0 0;  
+} 
+/*  de bovenste sectie op de homepagina en op de vervolgpagina's   */  
+.homeFirst, .first  {
+	padding: 4rem 0 2rem 0;
+}
+
+ /*  de secties met achtergrondbeeld */
+.homeAchtergrond{
+  background-image: url("../img/20160706_0001_bew1.jpg");
+ // background-position: 0% 50%;
+//  padding: 3rem 0 0 0;  
+  }
+.homeSecond {
+    background-image: url("../img/Proefschriftmaken_Cover3_.jpg");
+}   
+.homeThird {
+    background-image: url("../img/20160706_0001_bew1.jpg");
+	//min-height: 100%; 
+  }
+  .dienstenAchtergrond {
+	background-image: url("../img/Proefschriftmaken_Cover3_.jpg");
+//min-height: 100%;
+ }
+ .drukkenAchtergrond {
+   background-image: url("../img/Proefschriftmaken_drukken.jpg");
+ } 
+.drukkenPapiersoortenAchtergrond {
+  background-image: url("../img/FotoshootB_D-25.jpg");
+}
+.drukkenBindmethodesAchtergrond {
+    background-image: url("../img/FotoshootB_F94_darker.jpg");
+    background-position: 0% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.drukkenLaminaatAchtergrond {
+  background-image: url("../img/Fotoshootb_D-12.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.drukkenDrukmethodesAchtergrond {
+  background-image: url("../img/FotoshootB_F-30.jpg");
+}
+.digitaalAchtergrond {
+	background-image: url("../img/PM_Mockup-iPhone-Mac-iPad-e.jpg");
+}
+.offerteAchtergrond{
+	background-image: url("../img/Proefschiftmaken_Offerte.jpg");
+}
+.opmaakAchtergrond {
+	background-image: url("../img/Proefschriftmaken_opmaak_gr.jpg");
+}
+.opmaakCoverAchtergrond {
+	background-image: url("../img/Proefschriftmaken_Opmaak_Cov.jpg");
+}
+.opmaakBinnenAchtergrond, .universiteitAchtergrond {
+	background-image: url("../img/Proefschriftmaken_OpmaakBin.jpg");
+}
+.serviceAchtergrond {
+	background-image: url("../img/Proefschriftmaken_Service_g.jpg");
+}
+
+/*ALLE PAGINA'S, EERSTE BLOK  */
+.homeFirst .tagline {
+    padding: 0rem 0 0rem 2rem;
+    margin: 8rem 0 2rem 0;
+}
+.first .tagline{
+    padding: 0rem 0 0rem 6rem;
+	margin: 2rem 0;
+}
+.taglineHoofdregel {
+	font-size: 2.2rem;
+  color: #2476bf;
+  padding: 0rem 0.2rem 0rem 0.2rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2rem;
+}
+.taglineSubregel {
+  font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  letter-spacing: 0.25rem;
+  color: #ffffff;
+}
+
+/* ALLE PAGINA'S kader rechterkant in eerste blok */
+.callout { 
+    margin: 1rem 2rem 2rem 2rem;
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    background-color: rgba(59, 184, 22, 0.8);   /*  #3bb816  */
+    border: 0.3rem solid #3bb816;
+}
+.callout .bold {
+    font-weight: 800;
+	letter-spacing: 0.04rem;
+}
+ .callout h3 {
+   font-size: 1.5rem;
+   color: #ffffff;
+   text-transform: uppercase;
+   letter-spacing: 0.1rem;
+	padding-bottom: 0rem;
+	margin-bottom: 2rem;
+}
+.callout h3:after{  
+      margin-top: 0.3rem;
+      z-index: 1;
+	  background: rgba(255, 255, 255, 1);
+	  height: 0.3rem;
+}
+.callout a {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #2476bf;
+    background: rgba(255, 255, 255, 0.9);
+    white-space: nowrap;
+    padding: 0.5rem 3rem;
+    border: 0rem solid white;
+    margin: 0.6rem 3rem 1rem -3rem;
+    text-transform: uppercase;
+	display: block;
+	transition: all 0.4s ease-in-out;
+}
+.callout a:after {
+	font-family: FontAwesome;
+	// content: "\f061";/*fa-arrow-right */
+	//content: "\f18e"; /*fa-arrow-circle-o-right */
+//	 content: "\f138";/*fa-chevron-circle-right "\f138" */
+	// content: "\f152" ;/*fa-caret-square-o-right "\f152" */
+	color: #2476bf;  
+	padding-left: 1rem;
+}.
+callout a:hover:after {
+	color: #ffffff;
+}
+.callout a:hover {
+    transform: scale(1.1);
+	transform-origin: 0% 100%;
+    transition: all 0.2s linear;
+	background: rgba(59, 184, 22, 0.7);  /* #3bb816  */
+	color: #ffffff;
+}
+.callout p, .callout ul {
+  font-weight: 500;
+  color: #2476bf;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1.5rem 2rem 2rem 3rem;
+  border: 0rem solid white;
+  margin: 0.6rem 3rem 1rem -3rem;
+}
+.callout .linkPijl img {
+	display: inline;
+	    margin: 0 0 0.1rem 0.5rem;
+}
+.linkpijl a img {
+	    margin: 0 0 0.2rem 0.5rem;
+}
+.callout ul {
+	font-size: 0.9rem;
+    letter-spacing: 0.03rem;
+    list-style-type: none;
+ 
+}
+.callout li {
+	text-indent: -1.1rem;
+}
+.callout li:before {
+	content: '\25A0';
+    color: rgba(59, 184, 22, 1.0);   /*   */
+    margin-right: 0.5rem;
+}
+
+/* VERVOLGPAGINA'S het eerste blok  */
+
+h1.geenLijn:after {
+	content: '';
+    position: absolute;
+  //  left: 0;
+    display: block;
+    height: 0.3rem; /*  15px   2rem */
+    width: 100%;
+    background: rgba(59, 184, 22, 0.0);   /* #3bb816  */
+  
+    margin-top: 0.6rem;
+  //  z-index: 1;
+}
+.vervolg.callout {
+    margin-top: 0rem;
+}
+
+
+/*  offerte aanvraag  */
+div#responsive-form {
+  background: rgba(255,255,255, 0.8);
+position: relative;
+  z-index: 200;
+}
+.offerte-background {
+  background-color: rgba(59, 184, 22, 0.8); /* groen */ /* #3bb816;  */
+//  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.offerte {
+  background-color: rgba(59, 184, 22, 0.8); /* groen */ /* #3bb816;  */
+  color: #ffffff;
+  margin: 0.7rem 0.7rem 0.7rem 2rem;
+    padding: 0.3rem 0.7rem 0.3rem 0.3rem;
+	border: 0.15rem solid #ffffff;
+}
+.offerte.input-group {
+  width: 90%;
+}
+.offerte .button {
+	background-color: #ffffff;
+	color:  #2476bf;  /*  blauw  */
+}
+.offerte .button:hover {
+	background-color: #2476bf;
+	color:  #ffffff;  /*    */
+}
+.input-group-field {
+  display: inline-block;
+  background-color: #ffffff;
+  height: 3rem;
+  border: 0;
+}
+.input-group-label.offerte {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 0.8rem;
+  font-weight: 400;
+    background: #2476bf;  /*  blauw  */
+	height: 3rem;
+    border: 0;
+}
+
+/*  gecentreerde kop met oranje balk eronder en witte achtergrond */
+.header {
+    text-align: center;
+  padding: 3rem 0 2rem 0;
+    background: #ffffff;
+}
+/* tekst direct onder header, op diensten vervolgpagina's, zoals drukken */
+.headerText {
+  background: rgba(255, 255, 255, 0.9);
+    padding: 1rem 1.5rem;
+	margin-bottom: 1.5rem;
+}
+.headerText p {
+    font-weight: 700;
+}
+/* verzamelcontainer voor tekstblokken onder header, zorgt ervoor dat ze naast elkaar staan */
+.blokTextContainer {
+    display: inline-block; 
+	margin: 2rem 1rem;
+  }
+.blokTextContainer.contact {   
+	margin: 2rem 1rem;
+  }
+.blokText{
+  margin: 1rem 0 1.5rem 0;
+}
+/* het  vierkantje achter .blok h3, en in image-wrapper-header (4 mogelijkheden-blokken  */
+.vlak {
+   background-color: rgba(59, 184, 22, 0.3);
+    width: 4rem;
+    height: 4rem;
+    float: left;
+    margin: 0 -2rem 0 -1rem;
+}
+.werkwijze .vlak {
+  // background-color: rgba(255, 255, 255, 0.7);
+ 
+}
+/* andere plaatsing van dit vierkantje op pagina e-books  */
+.vlak.ebook {
+    float: left;
+    margin-top: -1rem;
+}
+.blok h3 {
+  //font-weight: 600;
+  color: #2476bf;
+}
+.blok h3:after {
+	height: 0.3rem;
+ //	background: rgba(255, 255, 255, 1.0);  /* wit  */
+   background: rgba(29, 112, 179, 1.0);  /* blauw  */
+    margin-top: 2px;
+	/*
+    height: 0.6rem;	
+   background: rgba(255, 255, 255, 0.7);
+    margin-top: -2px;  */	
+}
+
+/* HOMEPAGINA TWEEDE DEEL -  */
+
+/* de vier blokken met diensten (index.html en mogelijkheden.html */
+.mogelijkheden {
+	padding: 3rem 1rem 4rem;
+  //	background-color: rgba(59, 184, 22, 0.6);  groen 
+   background: rgba(255, 255, 255, 0.7);
+    margin-bottom: 0rem;
+}
+.mogelijkhedenBlok {
+	margin: 1rem 0;
+}
+/* begin foundation code */
+.image-wrapper {
+  width: 100%;
+  height: 16rem;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+  position: relative;
+  float: left;
+  text-align: center;
+  z-index: 100;
+}
+.image-wrapper img {
+  max-width: inherit;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+}
+.image-wrapper-header {
+    height: 4rem;
+    margin: 0 0 1rem 0;
+}
+.image-wrapper-header p {
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.03rem;
+	margin: 0 0rem 0rem 0rem;
+	padding-top: 0.5rem;
+}
+.image-overlay-content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  }
+.overlay-fade-in p {
+ display: inline-block;
+  letter-spacing: 0.15em;
+  color: #f4f4f4;
+  background: rgba(0, 0, 0, 0.0);
+  font-size: 1.4rem;
+  opacity: 300;
+  transition: all 0.2s linear;
+  }
+.overlay-fade-in img {
+  transition: all 0.2s linear;
+  }
+.overlay-fade-in .image-overlay-content {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: all 0.4s ease-in-out;
+  }
+.overlay-fade-in h2 {
+  display: block;
+  color: #f2f2f2;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 20% 0 10% 0;
+  opacity: 300;
+  transition: all 0.2s ease-in-out;
+}
+  .overlay-fade-in h2:after {
+    background: rgba(255, 255, 255, 0.0);
+  }
+  .overlay-fade-in:hover  h2:after {
+    background: rgba(255, 255, 255, 0.0);
+  }
+.overlay-fade-in .button {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border: 0.2rem solid rgba(59, 184, 22, 1.0); /* #3bb816; oranje */
+  background: rgba(0, 0, 0, 0.1); 
+  text-transform: uppercase;
+  position: relative;
+  opacity: 0;
+  transition: all 0.2s ease-in-out; 
+}
+.overlay-fade-in .button:hover {
+  background: #2476bf;  /*  blauw  */
+  border: 0.2rem solid rgba(59, 184, 22, 0.0);
+ }
+.overlay-fade-in:hover img {
+  opacity: 0.7;
+  transform: scale(1.2); 
+}
+.overlay-fade-in:hover .image-overlay-content {
+  opacity: 0; 
+}
+.overlay-fade-in:hover h2,  .overlay-fade-in .button {
+  opacity: 1; 
+}
+.overlay-fade-in:hover h2 {
+  background: rgba(0, 0, 0, 0.6);
+}
+.overlay-fade-in:hover p {
+  font-weight: 700;
+  color: #000;
+  transition-delay: 0.1s;
+  opacity: 300;
+}
+.overlay-fade-in:hover .button {
+  transition-delay: 0.2s;
+  z-index: 10; }
+/* eind foundation code */
+
+/* HOMEPAGINA DERDE DEEL - hoe wij werken  */
+
+.homeThird .header-bar {
+  background-color: rgba(59, 184, 22, 0.8); /* groen */ /* #3bb816; oranje */
+  color: white;
+  margin: 0rem 0 0rem 0;
+  text-align: center;
+}
+.homeThird h4 {
+  background-color: rgba(255, 255, 255, 0.0); /* wit  */
+  padding: 1rem 0.5rem 0rem 0.5rem;
+  margin-right: 2rem;
+}
+/* de tabs met stappen aan de bovenkant */
+
+.werkwijze-tabs{
+  background-color: rgba(255, 255, 255, 0.0); /* wit  */
+  //margin: 3rem 0 1rem 0;
+  margin-bottom: 1rem;
+  margin-top: 1rem;  
+}
+.tabs, .tabs-content {
+  border: 0;
+ background-color: rgba(255, 255, 255, 0.0); /* wit  */
+}
+a.tabs-title.is-active {
+ background-color: #ffffff;
+}
+#werkwijze-tabs {
+ // margin-left: 1rem;
+//  background-image: url("../img/lijn.png");
+  background-repeat: no-repeat;
+ // background-position-y: 4rem;
+  background-size: contain;
+}
+.tabs-title a, .tabs-title div {
+  display: block;
+  margin: 0 auto;
+}
+.tabs-title a{
+  width: 5.5rem;
+    color: #2476bf;
+    font-weight: 700;
+    font-size: 0.7rem;
+  text-transform: uppercase;
+  text-align: center;
+ // letter-spacing: 0.1rem;
+  border: 0;
+  padding: 0.5rem 0;
+   margin-top: 0.5rem;
+  transition: all 0.4s ease-in-out;
+}
+.tabs-title a:hover, .tabs-title.grijs a:hover {
+	transform: scale(1.1);
+    transition: all 0.2s linear;
+  color: rgba(59, 184, 22, 1.0); /* #3bb816  */
+  border: 0.3rem solid #ffffff;
+}
+.tabs-title.grijs a {
+  color: #aaaaaa;
+}
+.tabs-title img {
+  padding: 0rem 0rem 1rem 0;
+  width: 200%;
+}
+li.tabs-title:hover {
+  color: rgba(59, 184, 22, 1.0); /* #3bb816;   */
+}
+.tabs-title > a[aria-selected='true'] {
+    background-color: rgba(59, 184, 22, 0.8); /* groen */  /* #3bb816  */
+    border: rgba(59, 184, 22, 1.0) solid 0.3rem; /* #3bb816  */
+    color: #ffffff;   
+}
+li.tabs-title > div.cirkel {
+    margin: 1.5rem 0;
+}
+li.tabs-title.columns {
+    padding: 0;
+}
+ i.fa { 
+    font-size: 2rem;
+    color: white;
+}
+
+	
+.cirkel {
+	position: relative;
+//	width:5rem;
+//	height:5rem;
+	padding-top: 1.5rem;
+//	 border-radius: 3rem;
+ //background-color: #2476bf;
+// background-image: url("../img/iconBlue_lijn_hor.png");
+//	background-repeat: no-repeat;
+//  overflow: hidden;
+}
+.cirkelImgHor {
+	background-image: url("../img/iconBlue_lijn_hor.png");
+	background-repeat: no-repeat;
+	 background-position-x: 1rem;
+}
+/* sccordion  */
+.cirkelImgOfferte {
+	background-image: url("../img/iconBlue_acc_offerte.png");
+	background-repeat: no-repeat;
+	 background-position-x: 1rem;
+}
+.cirkelImgBestanden {
+	background-image: url("../img/iconBlue_acc_bestanden.png");
+	background-repeat: no-repeat;
+	 background-position-x: 1rem;
+}
+.cirkelImgDrukken {
+	background-image: url("../img/iconBlue_acc_drukken.png");
+	background-repeat: no-repeat;
+	 background-position-x: 1rem;
+}
+.cirkelImgLeveren {
+	background-image: url("../img/iconBlue_acc_leveren.png");
+	background-repeat: no-repeat;
+	 background-position-x: 1rem;
+}
+.accordion-title {
+  //  display: block;
+    padding: 1.5rem 5rem;
+ //   line-height: 1;
+    font-size: 0.9rem;
+    color: #2476bf;;
+  //  position: relative;
+    border: 1px solid #e6e6e6;
+    border-bottom: 0;
+}
+/*  de animatie in de laatste stap Leveren */
+@-webkit-keyframes leverenAnimatieFadeInOut {
+  0% { opacity:1;}
+  17% {opacity:1;}
+  25% {opacity:0;}
+  92% {opacity:0;}
+  100% {opacity:1;}
+}
+@-moz-keyframes leverenAnimatieFadeInOut{
+  0% { opacity:1;}
+  17% {opacity:1;}
+  25% {opacity:0;}
+  92% {opacity:0;}
+  100% {opacity:1;}
+}
+@-o-keyframes leverenAnimatieFadeInOut {
+   0% { opacity:1;}
+  17% {opacity:1;}
+  25% {opacity:0;}
+  92% {opacity:0;}
+  100% {opacity:1;}
+}
+@keyframes leverenAnimatieFadeInOut {
+  0% { opacity:1;}
+  17% {opacity:1;}
+  25% {opacity:0;}
+  92% {opacity:0;}
+  100% {opacity:1;}
+}
+.leverenCirkel {
+	position: relative;
+	width:8rem;
+	height:8rem;
+	 border-radius: 4rem;
+ background-color: #2476bf;
+  overflow: hidden;
+}
+#leverenAnimatie {
+	position: absolute;
+    top: 0.5rem;
+    left: 3rem;
+    width: 6rem;
+	/*
+  position:absolute;
+  top:1rem;
+  left:2rem;
+  height:6rem;
+  width:4rem;
+  margin:0 auto;
+ */
+}
+#leverenAnimatie img {
+  position:absolute;
+  left:0; 
+    -webkit-animation-name: leverenAnimatieFadeInOut;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 8s;
+    -moz-animation-name: leverenAnimatieFadeInOut;
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-duration: 8s;
+    -o-animation-name: leverenAnimatieFadeInOut;
+    -o-animation-timing-function: ease-in-out;
+    -o-animation-iteration-count: infinite;
+    -o-animation-duration: 8s;
+    animation-name: leverenAnimatieFadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+}
+
+#leverenAnimatie img:nth-of-type(1) {
+  animation-delay: 6s;
+}
+#leverenAnimatie img:nth-of-type(2) {
+  animation-delay: 4s;
+}
+#leverenAnimatie img:nth-of-type(3) {
+  animation-delay: 2s;
+}
+#leverenAnimatie img:nth-of-type(4) {
+  animation-delay: 0;
+}
+/*  eind  animatie in de laatste stap Leveren */
+
+
+/* de uitleg per stap aan de onderkant */
+
+.tabs-to-accordions {
+  border-radius: 1px;	
+  
+}
+
+.tabs-content {
+  padding: 1rem 0 3rem 3rem;
+     margin: 3rem 0 0 0;
+    background-color: rgba(255, 255, 255, 0.7); /* wit  */
+	border: rgba(59, 184, 22, 1.0) solid 0.3rem;  /* #3bb816  */
+}
+
+.tabs-panel.is-active h5 {
+    background-color: rgba(59, 184, 22, 0.8); /* groen */  /* #3bb816  */
+    color: #ffffff;
+    font-size: 0.8rem;
+    display: inline-block;
+    padding: 0.5rem;
+    margin: 1rem 1rem 1rem 0;
+}
+.werkwijze p {
+  font-weight: 500;
+  text-indent: -2.1rem;   /*  -1.9rem; */
+}
+.werkwijze p:before {
+  content: '\25A0';   /*  '\25A0  \25A0  \25A0' */
+  color: rgba(59, 184, 22, 1.0);   /* #3bb816  */
+  margin-right: 1.3rem;   /* 1.3rem;  */
+  font-size: 140%;
+}
+
+/* DIENSTEN (mogelijkheden.html): link naar universiteiten-overzichtpagina */
+.first .centered.tagline {
+    padding: 0rem 0 0rem 0rem;
+    margin: 2rem 0;
+    text-align: center;
+}
+.stempelLogo {
+	text-align: center;
+}
+
+/*  DIENSTEN VERVOLGPAGINA'S: drukken, landingspagina universiteit*/
+/* p-tags in blokken onder offerteaanvraag */
+
+.blok .vervolg {
+	background: rgba(255, 255, 255, 0.9);
+	padding: 1rem;
+}
+
+.blok .vervolg p {
+  //padding: 1rem 1rem 0 1rem;
+  margin: 0.6rem 1rem 0rem 0rem;
+}
+.blok .vervolg ul{
+	font-size: 0.9rem;
+    letter-spacing: 0.03rem;
+	list-style-type: none;
+	color: #2476bf; 
+//	padding: 0 1rem;
+    margin: 0;
+}
+.blok .vervolg > ul li:before {
+	content: '\25A0';  
+  color: rgba(59, 184, 22, 1.0);   /* #3bb816  */
+  margin-right: 0.5rem;   /* 1.3rem;  */
+  //font-size: 140%;
+}
+
+/* E-BOOKS */
+.ebook h3 a{
+	font-size: 1.1rem;	
+}
+.ebook a {
+	font-size: 0.9rem;
+	color: #2476bf; 
+}
+.ebook img{
+	margin: 1rem 0;
+}
+
+
+/*UNIVERSITEITEN OVERZICHTSPAGINA  */
+.universiteiten-row{
+	margin-top: 2rem;
+	padding: 0;
+}
+.universiteiten-row .columns:last-child {
+    float: left;
+}
+/*  blokken met universiteitslogo's  */
+.wrapper {
+  width: 100%;
+  height: 12rem;
+ // border: 1px solid rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+  position: relative;
+  float: left;
+  margin: 2rem 0;
+  text-align: center;
+      z-index: 100;
+}
+.universiteiten .overlay-content {
+  width: 100%;
+  height: 12rem;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+ }
+ .universiteiten .overlay-content img, .universiteiten .overlay-fade-in img{
+   width: 85%;
+   margin: 1rem;
+	height: inherit;
+	position: relative;
+	z-index: 20;
+}
+.universiteiten.overlay-fade-in:hover img {
+  transform: perspective(1px) scale(1.1); 
+  }
+ .universiteiten.overlay-fade-in .button, .universiteiten.overlay-content .button {  
+  padding: 0.5rem 0.5rem; 
+ }  
+.universiteiten .overlay-content {
+     background-color: rgba(255, 255, 255, 1.0); 
+	 //border: rgba(0,0,0,0.4) 0.2rem solid;	
+}
+.universiteiten .overlay-content .button, .universiteiten.wrapper.overlay-fade-in .button {
+    position: absolute;
+    right: 0.5rem;
+    left: 0.5rem;
+    bottom: 1rem;
+}
+.universiteiten .button {
+	border: 0.0rem solid rgba(59, 184, 22, 1.0);  /* #3bb816  */
+    background: #3bb816  ;
+}
+.universiteiten h3 {
+    display: none;
+}
+
+
+/* UNIVERSITEITEN VERVOLG PAGINA */
+
+.first .tagline.universiteit {
+    padding: 1rem 0 1rem 1rem;
+    margin: 2rem 0 2rem 6rem;
+    background-color: white;
+    opacity: 0.9;
+}
+.universiteit .taglineHoofdregel {
+	text-transform: none;
+}
+/* zorgt dat lange url niet in zijn geheel wordt getoond op kleine schermen */
+p.ellipses {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* CONTACTPAGINA  */
+
+.social_icon_holder {
+    display: inline-block;
+    position: relative;
+}
+/*  .social_icon_holder .fa-stack i {
+    color: #ffffff;
+    background: #3bb816; 
+}
+.social_icon_holder .fa-stack i:hover {
+  //  color: #ffffff;
+    background: #2476bf; 
+}   */
+.social_icon_holder a {
+	color: #2476bf; /*  blauw */
+}
+.social_icon_holder a:hover {
+	color: #3bb816; /*  oranje */
+}
+.social_icon_holder i.fa {
+	font-size: 1.5rem;
+	color: #2476bf;
+}
+
+
+/* OFFERTE  */
+.offerteBlok {
+	background: rgba(255, 255, 255, 0.9);
+	padding: 2rem;
+}
+.offerteBlok p {
+    padding-bottom: 2rem;
+    margin: 0;	
+}
+.offerteForm {
+	margin-top: 2rem;	
+}
+.gform_body > ul > li > label {
+	font-weight: 700;
+}
+li.gfield {
+	margin-bottom: 0.5rem;
+}
+
+.gform_body ul {
+    margin: 0;
+    padding: 0 2rem;
+}
+.gform_body > ul {
+    padding: 0rem;
+}
+.gform_body li {
+    list-style-type: none; 
+}
+.gform_body li label {    
+   color: #2476bf; 
+}
+.gform_body div.name_first, .gform_body div.name_last {
+    display: inline-block;
+	
+}
+.gform_body div.name_first{
+    padding: 0;
+}
+.gform_body div.name_last {
+	padding-left: 1rem;
+}
+
+.gform_body div.name_first input, .gform_body div.name_last input {
+    margin-bottom: 0;
+}
+span.gfield_required {
+    font-size: 1.3rem;
+	line-height: initial;
+}
+.gfield_description {
+    font-size: 0.875rem;
+}
+.gform_footer.top_label .button {
+    margin: 1rem 0 2rem 0;
+}
+
+/* FOOTER  */
+
+footer {
+  float: left;
+  width: 100%;
+  padding: 0.5rem 0 1rem 0;
+  margin-top: 2rem;
+  // background-color: #2476bf;
+ background-color: rgba(59, 184, 22, 0.8);  /*groen */
+}
+footer h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0rem 0rem 2rem 0rem;
+}
+footer h3:after {
+  height: 0.5rem;
+  margin-top: 0.2rem;
+}
+
+.footerInfo {
+	list-style-type: none;
+	font-size: 0.8rem;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0.8rem 0rem 0rem 0rem;
+}
+.footerInfo p {
+	//font-size: 0.8rem;
+	color: #ffffff;
+}
+.footerInfo a {
+  font-weight: 700;
+  color: #ffffff;
+}
+.footerInfo a:hover {
+	//color: #3bb816;
+	color: #2476bf;
+}
+.footerInfo ul {
+	margin-left: 0;
+	list-style-type: none;  
+	line-height: 2.0;
+	color: #ffffff;
+}
+.footerInfo .social_icon_holder i.fa {
+	font-size: 2rem;
+	color: #ffffff;
+	padding-top: 1rem;
+}
+
+
+.linkKnopFooter {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#121820+0,606163+99 */
+//  background: #121820; /* Old browsers */
+//  background: -moz-linear-gradient(top,  #121820 0%, #606163 99%); /* FF3.6-15 */
+//  background: -webkit-linear-gradient(top,  #121820 0%,#606163 99%); /* Chrome10-25,Safari5.1-6 */
+//  background: linear-gradient(to bottom,  #121820 0%,#606163 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+//  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#121820', endColorstr='#606163',GradientType=0 ); /* IE6-9 */
+
+  border-radius:  5px;
+  margin:0.8rem 3rem 0rem 0rem;
+  padding:5px 10px 10px 0px;
+//  font-size: 0.7rem;
+  color: #ffffff;
+  /* display en float hieronder zorgen ervoor dat div de breedte van de elementen erin volgt  */
+  display: inline;
+//  float: left;
+  //clear: both;
+}
+
+.linkKnopFooter a {
+  display: inline-block;
+  font-weight: 700;
+  padding: 0.4rem 0.8rem;
+  background-color: #2476bf;  /*  blauw  */
+//  border-radius: 13px;
+  color: #ffffff;   /*  wit  */
+  margin-bottom: 1rem;
+}
+.linkKnopFooter a:hover {
+  color: #3bb816; /*  oranje */
+  background-color: #ffffff; /*  groen */
+}
+
+
+
+
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+@media screen and (max-width: 39.9375em)  {
+  .top-bar{
+   
+    padding: 0rem 0.6rem 0 0;
+    background-color: #ffffff;
+    z-index: 300;
+    width: 80%;
+    position: absolute;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  .top-bar-left > ul > li:last-child {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1.4rem;
+  }
+ 
+  .top-bar-right .menu li {
+    margin: 1rem 1rem 1rem 1rem;
+  }
+  .menu.medium-horizontal > li {
+    display: block;
+   // width: 18rem;
+  }
+  .padding {
+    padding: 3.5rem 0 5rem 0;
+  }
+  .homeFirst {
+    color: #2476bf;
+	padding-top: 0rem;
+	padding-bottom: 4rem;
+	background: rgba(255, 255, 255, 0.7);
+  }
+  .homeFirst:after {
+    padding-top: 0%;
+  }
+  .first {
+    padding: 0;
+	background: rgba(255, 255, 255, 0.7);
+  }
+  strong, .bold {
+	  font-weight: 800;
+  }
+ /* .homeFirst h1 {
+	  background: #2476bf;
+  }  */
+  	/* 
+  .homeFirst h1:before {
+ content: '';
+    position: absolute;
+    display: block;
+	height: 2.3rem;
+    // height: 0.3rem;
+    width: 100%;
+    background: rgba(29, 112, 179, 1.0);  /* blauw  
+    margin-top: -0.1rem;
+	z-index: -1; 
+  }  */
+  .homeFirst h1:after {   
+	background: rgba(59, 184, 22, 1.0); /* #3bb816  */
+//	background: rgba(29, 112, 179, 1.0);  /*   */
+    height: 0.25rem;
+	z-index: 100;
+  } 
+ 
+  /*
+  .homeFirst .lowerCase {
+	  font-weight: 600;
+   // font-weight: inherit;
+   // text-transform: uppercase;
+   // font-size: 100%;  
+  }
+  
+*/
+  .homeFirst .taglineHoofdregel {
+	//  color: #ffffff;
+	  padding: 0rem 0rem 0rem 0rem;
+	   //    font-weight: 500;
+		 // background-color: rgba(255, 255, 255, 0.0);
+		// background: rgba(29, 112, 179, 1.0);  /* blauw  */ 
+  }
+  .taglineSubregel {
+	  color: #2476bf;
+   font-size: 1.1rem;
+    margin-top: 2rem;
+	padding: 0rem 0rem 0rem 0rem;
+	 letter-spacing: 0.15rem;    
+	  //  background-color: rgba(255, 255, 255, 0.8);
+  }
+  .taglineHoofdregel strong {
+	  font-weight: 800;
+  }
+  .homeFirst .tagline {
+   //padding: 0rem 1rem 0rem 1rem;
+       margin: 0rem 0 2rem 0;
+	//background-color: rgba(255, 255, 255, 0.9);
+  }
+ 
+  .tagline {
+     padding: 0 0 5rem 2rem;
+  }
+  .taglineHoofdregel {
+	  background-color: rgba(255, 255, 255, 0.0);
+	font-size: 1.9rem;
+	font-weight: 800;
+	padding: 0rem 0.4rem 0rem 0rem;
+  }
+  
+ /* .taglineSubregel {
+   padding: 0rem 0.4rem 0rem 0.4rem;
+ 
+  }  */
+  h2.taglineSubregel:after {
+	      background: rgba(59, 184, 22, 0);  /* #3bb816  */
+  }
+  .callout h3 {
+      font-size: 1rem;
+	  font-weight: 800;
+	  
+  } 
+  .callout h3:after {
+	  height: 0.3rem;
+	  background: rgba(255, 255, 255, 1);
+	  margin-top: 0.4rem;
+  }
+  .callout a {
+	  margin-right: 0;
+	  font-size: 0.8rem;
+	  font-weight: 600;
+	  letter-spacing: 0.02rem;
+  }
+  .callout p {
+	  padding-right: 0.5rem;
+	  margin-right: 0;
+  }
+  .first .tagline{
+    padding: 1rem 0 0rem 1.5rem;
+    margin: 1rem 0;
+  }
+  .first .offerteForm.tagline {
+    padding-top: 0rem;
+    margin: 0 0 2rem 0;
+  }  
+  .header {
+	  padding-top: 2rem;
+  }
+  .text {
+    padding: 3rem 0 0;
+  }
+ .row.transparentWhite {
+    padding: 0rem 0 3rem 0;
+	}
+  .homeAchtergrond {
+	 // background: rgba(255, 255, 255, 0.7);
+
+  }	  
+	
+  .homeSecond, 
+  .drukkenDrukmethodesAchtergrond,
+  .drukkenBindmethodesAchtergrond,
+  .drukkenPapiersoortenAchtergrond ,
+  .drukkenLaminaatAchtergrond  
+  {
+    background-image: none;
+  }
+  
+  
+/*offerte*/
+  
+  .input-group, .input-group-field, .input-group-label {
+    display: block;
+    margin-bottom: 1rem;
+  }
+  .offerte {
+    margin: 0.7rem 0 0.7rem 0rem;
+  }
+  .input-group.offerte {
+    width: 100%;	
+  }
+  .input-group-label.offerte {
+    width: 100%;
+	
+  }
+  .offerte-background {
+    position: relative;
+    margin: 2rem 0;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  
+ 
+  /* werkwijze */
+  
+  .werkwijze-tabs{
+      padding: 0;
+  }
+  .tabs-content {
+    padding: 1rem 0 2rem 2rem;
+  }
+  .tabs-title img {
+   // padding: 0rem 1rem;
+   // display: block;
+  }
+  .tabs-title a {
+ //   padding: 0rem 0rem 0rem 0.3rem;
+  //  margin-bottom: 1.5rem;
+	    font-size: 0.5rem;
+  }
+  .tabs-title > a[aria-selected='true'] {
+    background-color: rgba(59, 184, 22, 0.8); /* groen */  /* #3bb816  */
+    border: rgba(59, 184, 22, 1.0) solid 0rem; /* #3bb816  */
+    color: #ffffff;
+    padding: 0.5rem 0;
+}
+ li.tabs-title.small-3{
+	padding: 0;
+}
+  .tabs-panel.is-active h4 {
+	  display: block;
+  }
+  .werkwijze h4 {
+	  padding: 0;
+	  margin: 0 0 1rem 1rem;	 
+  }
+  .werkwijze p:before {    
+    margin-left: 1rem;  
+  }
+  #leverenAnimatie {
+	//position: absolute;
+  //  top: 0.5rem;
+    left: 1.1rem;
+    width: 4rem;
+  }
+  .tabs-to-accordions {
+	border-radius: 0px;
+  } 
+
+ 
+  
+   
+  
+ /* universiteiten overzichtspagina  */
+ 
+  .universiteiten img {
+    display: none;
+  }
+  .universiteiten h3 {
+	  font-size: 1.1rem;
+	  font-weight: 700;
+	  letter-spacing: 0.05rem;
+   display: inline-block;
+    padding: 1rem 0;
+    z-index: 110;
+  }
+  .universiteiten h3:after {
+	  background: rgba(255, 255, 255, 0.5);
+    margin-top: -1rem;
+    z-index: -1;
+    height: 2rem;
+	
+	// background: rgba(29, 112, 179, 1.0);  /* blauw  */
+	//background: rgba(255, 255, 255, 0.8);
+  //  z-index: 110;
+  //  height: 0.2rem;
+ // margin-top: 0rem;
+	//  z-index: 110;
+  }
+  .universiteiten .overlay-content {
+	  background-color: rgba(255, 255, 255, 0.6);
+	  
+  }
+  .universiteiten.wrapper.overlay-fade-in, .universiteiten .overlay-content {
+	 height: 9rem;
+	 border: 0.2rem solid rgba(255, 255, 255, 1.0);
+  }
+  .universiteiten.wrapper.overlay-fade-in {
+	 margin: 1rem 0;
+  }
+
+ /* universiteiten vervolgpagina  */
+ /*  de container met daarbinnen een element met klasse .ellipses
+ moet een gedefinieerde breedte hebben */
+  .url {
+    width: 18rem;
+  }
+  .blok .vervolg ul {
+	  padding: 0 0 0 2rem;
+  }
+  .blok .vervolg p {
+	  margin-right: 0;
+  }
+  .first .tagline.universiteit {
+	  margin: 0;
+  }
+  .universiteit .taglineHoofdregel {   
+    padding: 0;
+  }
+  .universiteit img {   
+    display: none;
+  }
+  .blokTextContainer {
+	  margin: 0;
+  }
+
+
+
+
+  /*  offerte.html  */
+  .gform_body div.name_last {
+    padding-left: 0;
+  }
+  ul.gfield_radio {
+    padding: 0;
+  }
+  
+  
+}
+
+
+/*max-width 1024px, mobile/tablet issues */
+@media only screen and (max-width: 63.9375em){
+	.top-bar {
+		margin-top: 0;
+	}
+	div#responsive-form {
+    position: fixed;
+    top: 5.5rem;
+    z-index: 150;
+  }  
+   button.button.offer {   /*   a.button.offer.fixed */
+    position: fixed;
+    top: 3rem;
+    right: 1rem;
+    background: rgba(59, 184, 22, 0.8);
+	border: #3bb816 solid 0.3rem;
+    z-index: 150;
+}
+ button.button.offer:hover { 
+	background: #2476bf;
+	border: #2476bf solid 0.3rem;;
+ }
+  .input-group-label.offerte {
+  //  width: 100%;
+	font-size: 0.7rem;
+  }
+  .footerInfo li {
+    padding: 0.5rem 0;
+}
+	
+}
+
+
+/* min-width 641px, medium screens   40.063em*/
+@media only screen and (min-width: 40.063em) {   
+	
+} 
+
+
+/* max-width 1024px, use when QAing both mobile and tablet issues */
+@media only screen and (max-width: 64em) {
+ 
+}
+
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+  #leverenAnimatie {	
+    //top: 0.5rem;
+    left: 1.5rem;
+    width: 5rem;
+  }
+} 

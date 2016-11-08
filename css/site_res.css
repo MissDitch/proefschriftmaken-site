@@ -1,0 +1,248 @@
+/* site.css */
+
+html, body {
+  margin: 0;
+  padding: 0; 
+}
+
+body {
+  background-color:  #B5D2DD ;  /* 181 210 221 rgb
+  oude kleur:#CCFF99;  */
+ background-image: url(../images/skiing-backgrounds.jpg);
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto ;
+  font-size: 100%;
+  
+  /*font-family: Calibri, Segoe UI, Arial, Helvetica, sans-serif;
+  font-family: Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', serif;
+   'PT Sans', 'Antic Slab', Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', 
+  font-size: 18px; 
+  
+@font-face {
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
+}
+
+div {
+    font-family: myFirstFont;
+}
+  
+  
+  */
+}
+
+header  {
+  display: block;   //anders worden nieuwe html5-tags als inline tags gezien, bij oudere browsers
+}
+
+header h1  {
+  position: relative;
+  /*!top: -80px;*/
+  margin: 0;
+  
+}
+	  
+@media (max-width: 600px) {
+  div.kolom {  
+  width: 300px;
+  margin: 5px 1%;
+  /* display: block;
+ vertical-align: top; */
+} 
+}/*/mediaquery*/	  
+	 
+@media (max-width: 1100px) {
+  div.kolom {  
+  width: 70%;
+  margin: 5px 1%;
+  /* display: block;
+ vertical-align: top; */
+}
+}/*/mediaquery*/	  
+
+
+img.top {
+  float: right;
+  max-width: 100%;
+}
+
+
+.kolom {  
+background-color: rgba(255, 255, 255, .7);
+
+   border-radius: 5px;
+  width: 30%;
+  margin: 30px 1%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.span-1, .span-2, .span-3 {
+      /*  min-height: 900px; */
+        float: left;
+        margin-right: 1%;         /* all spans get margin-right */
+        margin-left: 1%;    		/* deze zelf toegevoegd */
+	    margin-bottom: 10px;
+      }
+
+      .span-1 {
+        width: 28%;                /* one column, 90 + 10 = 100 */
+         /*  background-color: red;  /*  so we can see it... */
+      }
+
+      .span-2 {
+        width: 68%;               /* two column, 190 + 10 = 200 */
+     /*  background-color: blue;  */
+      }
+      
+      .span-3 {
+        width: 98%;               /* three column, 290 + 10 = 300 */
+       /* background-color: lightgreen;  */
+      }
+
+
+p  { 
+   max-width: 700px;
+   margin: 10px 4% 20px 4%;
+  font-family: serif; 
+  font-weight: normal;
+ font-size: 1.25em;    /* 20px / 16 = 1.25em*/
+}
+
+	  
+h1, h2, h3, h4 {
+  margin: 10px 4% 20px 4%;
+  font-family: Calibri, Segoe UI, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  
+}
+
+
+h1 {
+  text-align: center;
+ /* margin-top: 30px;
+  padding-top: 15px; */
+  
+  font-size: 4em;   /*48px;*/
+}
+
+
+h2 {
+  padding-top: 15px;
+  border-bottom: 1px solid #57b1dc;
+  text-transform: uppercase;
+  text-align: center; 
+  font-size: 2em;  
+  /**/
+}
+
+h3  {  
+  margin-top: 20px;
+  font-size: 1.3em;  
+  text-transform: uppercase;
+  background-color: rgba(53, 110, 165, .25);  /*kleur lucht #356EA5 */
+  /**/
+}
+
+h4  {
+text-transform: uppercase;
+    color: red;
+	font-size: 1em;  
+	/**/
+	}
+
+.onderstreept  {
+   border-bottom: 1px solid #57b1dc;
+}
+
+
+#nadruk {
+  
+  /*font-size: 24px;*/
+  color: red;
+}
+
+ul  {
+  margin-bottom: 120px;
+  
+}
+
+ul.inline {
+  display: inline;
+  /*font-size: 12px;*/
+}
+
+
+
+li {
+list-style-type: none;   
+   padding: 20px;
+   margin: 10px 0;
+   border-radius: 20px;
+}
+
+nav {
+    display: block;
+   padding: 10px 10px 20px 0;
+   margin: 10px 0;  
+}
+
+
+
+nav#extern  li {
+  background-color: #356EA5;
+}
+
+nav#extern a  {
+  color: white;
+}
+
+nav li {
+    border-radius: 20px;
+   background-color: white;
+   
+	text-transform: uppercase;
+	font-family: sans-serif;
+  font-weight: bold;
+	list-style-type: none;   
+	font-size: 14px;
+     letter-spacing: 2px;  
+  
+}
+
+a {
+  text-decoration: none;
+  font-family: sans-serif;
+     color: #000000;
+
+}
+
+.naarBoven  {
+  text-align: center;
+}
+
+
+.kleurband  {
+  background-color: rgba(255, 255, 255, .5);
+  margin-top: 30px;
+   padding: 1% 5%;
+   border-radius: 5px;
+}
+
+.kleurvlak  {
+ background-color: rgba(255, 255, 255, .7);
+  /*opacity: .5;*/
+  margin-top: 30 px;
+  padding: 1% 5%;
+  border-radius: 5px;
+}
+
+#historie {
+  border: solid 1px red;
+  border-radius: 5px;
+  margin: 10px 10px 10px 10px;
+  padding: 0 10px 5px 10px;
+}
